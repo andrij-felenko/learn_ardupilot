@@ -1,0 +1,7 @@
+# Claude local settings (personal; not for the repo)
+.claude/settings.local.json
+.claude/
+
+# ESP-IDF build artifacts
+catapult/firmware/build/
+catapult/firmware/sdkconfig.old
