@@ -41,10 +41,10 @@ led_handle_t led_init(uint8_t gpio, uint8_t bright){
     _->config.led_model        = LED_MODEL_WS2812;
     _->config.flags.invert_out = false;
 
-    _->rmt_config.clk_src        = RMT_CLK_SRC_DEFAULT;
-    _->rmt_config.resolution_hz  = 10 * 1000 * 1000;
+    _->rmt_config.clk_src           = RMT_CLK_SRC_DEFAULT;
+    _->rmt_config.resolution_hz     = 10 * 1000 * 1000;
     _->rmt_config.mem_block_symbols = 48;
-    _->rmt_config.flags.with_dma = false;
+    _->rmt_config.flags.with_dma    = false;
 
     ESP_ERROR_CHECK(led_strip_new_rmt_device(&_->config, &_->rmt_config, &_->strip));
     return _;
