@@ -4,4 +4,8 @@
 
 # ESP-IDF build artifacts
 catapult/firmware/build/
+catapult/firmware/managed_components/
 catapult/firmware/sdkconfig.old
+
+# Qt files
+**/.qtcreator/

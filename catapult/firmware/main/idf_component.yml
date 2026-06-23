@@ -1,0 +1,4 @@
+# ESP-IDF Component Manager manifest. On the next CMake configure, ESP-IDF
+# downloads these components automatically (needs internet, once).
+dependencies:
+  espressif/led_strip: "^2.5.0"   # driver for addressable LEDs (WS2812) via RMT
